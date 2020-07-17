@@ -1,0 +1,17 @@
+<h2>Shop our Wines</h2>
+
+<section class="wine-grid">
+
+  <% @wines.each do |w| %>
+    <div class="wine-item">
+      <img src="https://media.vinomofo.com/uploads/bf89e30017e583d465cf9fb38a8f5323?1594604171" alt="" class="wine-item-image">
+      <p class="wine-item-name"><%= w.name %></p>
+      <p><%= w.kind %></p>
+      <p>$ <%= w.price %></p>
+      <button>
+        <%= link_to 'view me', wine_path(w) %>
+      </button>
+    </div>
+  <% end %>
+
+</section>

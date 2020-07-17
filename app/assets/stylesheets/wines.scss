@@ -1,0 +1,56 @@
+// Place all the styles related to the Wines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.wine-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 50px;
+  padding-top: 50px;
+}
+
+.wine-item {
+  box-shadow: 0 2px 2px #c4c4c4;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.wine-item-image {
+  width: 100%;
+}
+
+.wine-item p {
+  font-weight: bold;
+}
+
+.wine-item-name {
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.wine-details-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.wine-details-image {
+  height: 300px;
+  justify-self: right;
+}
+
+.wine-price {
+  font-size: 200%;
+}
